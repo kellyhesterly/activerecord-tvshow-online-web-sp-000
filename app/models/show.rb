@@ -9,5 +9,6 @@ class Show < ActiveRecord::Base
       if show.highest_rating = true
       show.name
     end
+    end
   end
 end
