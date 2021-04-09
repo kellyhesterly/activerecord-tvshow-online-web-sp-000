@@ -8,7 +8,7 @@ class Show < ActiveRecord::Base
     Show.all.each do |show|
       if show.highest_rating = true
       show.name
-    end
+      end
     end
   end
 end
