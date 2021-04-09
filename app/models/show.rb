@@ -17,7 +17,7 @@ class Show < ActiveRecord::Base
       lr = !!self.lowest_rating
       if lr == true
         show.name
-
+      end
     end
   end
 
