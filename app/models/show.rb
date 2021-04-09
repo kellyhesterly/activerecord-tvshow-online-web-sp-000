@@ -15,6 +15,7 @@ class Show < ActiveRecord::Base
   def self.least_popular_show
     Show.all.each do |show|
       show.name if self.lowest_rating
+      binding.pry
     end
   end
 end
