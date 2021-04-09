@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    Show.all.tap do |show|
+    Show.all.each do |show|
       show.name if show.highest_rating
     end
   end
