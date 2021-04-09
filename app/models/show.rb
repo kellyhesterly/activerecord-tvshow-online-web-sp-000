@@ -13,7 +13,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.least_popular_show
-    Show.all.each do |show|
+    Show.all.tap do |show|
       lr = !!self.lowest_rating
       if lr == true
         show.name
