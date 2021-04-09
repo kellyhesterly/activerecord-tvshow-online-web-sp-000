@@ -6,9 +6,7 @@ class Show < ActiveRecord::Base
 
   def self.most_popular_show
     Show.all.each do |show|
-      if show.highest_rating = true
-      show.name
-      end
+      show.name if show.highest_rating = true
     end
   end
 end
