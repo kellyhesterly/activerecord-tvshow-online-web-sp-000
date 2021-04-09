@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    sekf.all.each {|show| show.name if self.highest_rating}.first
+    self.all.each {|show| show.name if self.highest_rating}.first
   end
 
   def self.lowest_rating
