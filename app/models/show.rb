@@ -18,6 +18,7 @@ class Show < ActiveRecord::Base
       if lr == true
         show.name
       end
+      .first
     end
   end
 
