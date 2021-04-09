@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    Show.all each do |shoq|
+    Show.all each do |show|
       binding.pry
     end
   end
