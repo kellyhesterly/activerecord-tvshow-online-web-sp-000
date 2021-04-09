@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
 
   def self.most_popular_show
     self.highest_rating.tap do |show|
+      binding.pry
     end
   end
 end
