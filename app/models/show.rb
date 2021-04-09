@@ -16,7 +16,6 @@ class Show < ActiveRecord::Base
     Show.all.each do |show|
       if self.lowest_rating
         show.name
-      binding.pry
     end
   end
 end
