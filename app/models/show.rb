@@ -7,4 +7,7 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     Show.all.each {|show| show.name if self.highest_rating}.first
   end
+
+  def self.lowest_rating
+  end
 end
